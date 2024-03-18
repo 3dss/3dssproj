@@ -4,7 +4,7 @@ import sys
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
-chromeDriverPath = sys.argv[1]
+chromeDriverPath = 'chromedriver1'
 s = Service(chromeDriverPath)
 driver = webdriver.Chrome(service=s)
 
