@@ -1,11 +1,11 @@
 from selenium import webdriver
 import time
-import sys
+import os
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
-chromeDriverPath = '/chromedriver1'
-s = Service(chromeDriverPath)
+chromeDriverPath = 'chromedriver1'
+s = Service(os.getcwd() + '/chromeDriverPath')
 driver = webdriver.Chrome(service=s)
 
 url = 'https://www.google.com/'
