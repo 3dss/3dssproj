@@ -5,7 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
 chromeDriverPath = sys.argv[1]
-driver = webdriver.Chrome(chromeDriverPath)
+s = Service(chromeDriverPath)
+driver = webdriver.Chrome(service=s)
 
 url = 'https://www.google.com/'
 xpath = '//*[@id="SIvCob"]'
