@@ -4,11 +4,10 @@ import os
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
-chromeDriverPath = 'chromedriver1'
 os.system(f"echo 'export PATH=$PATH:{os.getcwd()}/chromedriver1' >> ~/.bash_profile")
 os.system("source ~/.bash_profile")
 
-s = Service(os.getcwd() + '/chromeDriverPath')
+s = Service(f"{os.getcwd()}/chromedriver1')
 driver = webdriver.Chrome(service=s)
 
 url = 'https://www.google.com/'
