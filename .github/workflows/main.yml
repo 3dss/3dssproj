@@ -1,29 +1,3 @@
-
-Skip to content
-Navigation Menu
-3dss
-AutoReadme
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-    Settings
-
-Generate README using shared template
-Update main.yml #7
-
-Jobs
-
-Run details
-
-Workflow file for this run
-.github/workflows/main.yml at 290232b
 name: Generate README using shared template
 
 on:
